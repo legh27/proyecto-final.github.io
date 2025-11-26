@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carniceria "El Chuy"</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<!--Poniendo CSS con la etiqueta style-->
+<body style="background-color: rgb(98, 16, 43); font-family: 'Arial';">
+    <header>
+
+        <nav>
+            <div>
+                <span>cortes</span>
+                <span>Carniceria </span>
+            </div>
+
+            <ul>
+                <!--Enlace interno-->
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div>
+                <h1 style="color:brown; text-align: center;">Carniceria "El Chuy"</h1>
+                <p style="font-size: 22px;">Carne de la mejor calidad , siempre fresca, siempre buena.</p>
+                <a href="#menu">Ver menú</a>
+            </div>
+
+            <div>
+                <img src="https://directoriosvito.com.mx/wp-content/uploads/2018/05/supercarneschuylogo.jpg" alt="carnicerias chuy" width="200">
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros">
+            <div>
+                <h2>Sobre nosotros</h2>
+                <p>
+                    Nuestra pasión por la carne nos hace entregarte la mejor 
+                    calidad para que tu paladar deguste la mejor experiencia culinaria.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROMOCIONES -->
+        <section id="promociones">
+            <div>
+                <h2>Promociones</h2>
+                <ul>
+                    <li><strong>4x3</strong> en cortes seleccionados los martes y jueves</li>
+                    <li><strong>Combo Súper kilo:</strong> kilo de milanesa + kilo de res $650</li>
+                    <li><strong>30% de descuento</strong> en carnes de temporada</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section id="menu">
+            <div>
+                <h2>Menú</h2>
+
+                <div>
+                    <!-- Tarjeta 1 -->
+                    <article>
+                        <img src="https://magazine.medlineplus.gov/images/uploads/main_images/red-meat-v2.jpg" alt="Milanesa de res" width="150">
+                        <div>
+                            <h3>Milanesa de res</h3>
+                            <p>suave, roja y deliciosa.</p>
+                            <p>$350 kg</p>
+                            <button style="border-radius: 8px; background-color: rgb(210, 114, 30); color: white;">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1bbEQmiR0mCLEpzy_fHU-acLkV-vnFir-QQ&s" alt="Diezmillo" width="150">
+                        <div>
+                            <h3>Diezmillo</h3>
+                            <p>Lo mejor y mas suave del mundo vacuno.</p>
+                            <p>$445 kg</p>
+                            <button style="border-radius: 8px; background-color: rgb(210, 72, 30); color: white;">Agregar</button>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article>
+                        <img src="https://consumaconciencia.com/wp-content/uploads/2025/09/RIB-EYE.jpg" alt="Rib eye" width="150">
+                        <div>
+                            <h3>Rib eye</h3>
+                            <p>La mejor sensacion del mejor corte, una experiencia que tienes que sentir.</p>
+                            <p>$600 kg</p>
+                            <button style="border-radius: 8px; background-color: #d24b1e; color: white;">Agregar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <p>Productos en tu carrito: <span>0</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <!-- CONTACTO -->
+        <div>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Visítanos o haz tu pedido.</p>
+
+                <h3>Pedidos</h3>
+                <form>
+
+                    <div>
+                        <label>Nombre completo:</label>
+                        <input type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div>
+                        <label>Celular:</label>
+                        <input type="tel" placeholder="Tu Telefono">
+                    </div>
+
+                    <div>
+                        <label>Correo electrónico:</label>
+                        <input type="email" placeholder="Tu correo">
+                    </div>
+
+                    <!-- CORTES -->
+                    <fieldset>
+                        <legend>Cortes de Carne:</legend>
+
+                        <label>
+                            <input type="radio" name="cortes" value="Diezmillo"> Diezmillo
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cortes" value="RIB-EYE"> RIB-EYE
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cortes" value="New York"> New York
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cortes" value="Picaña"> Picaña
+                        </label>
+                    </fieldset>
+
+                    <!-- EXTRAS -->
+                    <fieldset>
+                        <legend>Extras:</legend>
+
+                        <label><input type="checkbox" value="Cuchillos"> Cuchillos</label>
+                        <label><input type="checkbox" value="Tablas"> Tablas</label>
+                        <label><input type="checkbox" value="Utensilios"> Utensilios</label>
+                        <label><input type="checkbox" value="Cortes a la medida"> Cortes a la medida</label>
+                    </fieldset>
+
+                    <div>
+                        <label>Fecha del evento:</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Imagen de referencia:</label>
+                        <input type="file" accept="image/*">
+                    </div>
+
+                    <button type="submit" style="border-radius: 8px; background-color: chocolate; color: white;">Enviar pedido</button>
+                </form>
+            </section>
+
+            <!-- REDES -->
+            <section>
+                <h2>Síguenos</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/carnemaxleongto/?locale=es_LA" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/carniceriadmarco_oficial/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@chuladademaizprieto_?lang=es" target="_blank">TikTok</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ox5500AwlsE" target="_blank">YouTube</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <p>© 2025 Carniceria "El Chuy" – Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
